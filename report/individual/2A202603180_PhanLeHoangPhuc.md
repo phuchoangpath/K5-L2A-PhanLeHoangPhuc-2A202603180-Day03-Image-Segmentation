@@ -14,15 +14,15 @@ Ghi tên ZIP đúng như file trong `submissions/` và số ảnh đã vẽ, Sav
 
 | Task | File ZIP đúng tên | Hoàn thành mấy ảnh | Điểm tối đa (coach chấm sau) |
 | --- | --- | ---: | ---: |
-| easy_semantic | x | 3 / 3 |  |
-| medium_instance | x | 3 / 3 |  |
-| hard_panoptic | x | 2 / 2 |  |
-| cp1_holes | x | 1 / 1 | 3 |
-| cp2_slice | x | 1 / 1 | 3 |
-| cp5_occlusion | x | 1 / 1 |  |
-| cp3_thin | x | 1 / 1 | 3 |
-| cp4_curb | x | 1 / 1 | 3 |
-| cp6_coverage | x | 1 / 1 |  |
+| easy_semantic | x | 3 / 3 ||
+| medium_instance | x | 3 / 3 ||
+| hard_panoptic | x | 2 / 2 ||
+| cp1_holes | x | 1 / 1 | 3 ||
+| cp2_slice | x | 1 / 1 | 3 ||
+| cp5_occlusion | x | 1 / 1 ||
+| cp3_thin | x | 1 / 1 | 3 ||
+| cp4_curb | x | 1 / 1 | 3 ||
+| cp6_coverage | x | 1 / 1 ||
 | **Tổng tối đa** | | | **100** |
 
 Nếu export lỗi, ghi task, dữ liệu đã Save đến đâu và lỗi đã báo coach.
