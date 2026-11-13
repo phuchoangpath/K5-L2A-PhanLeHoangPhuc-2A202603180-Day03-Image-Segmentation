@@ -46,7 +46,9 @@ Chọn một lỗi **có thật** trong bài. Nếu công cụ lỗi khiến b�
 - Quy tắc và hành động sửa: Theo guideline mỗi vật thể 1 mask, tôi đã xóa và tô lại thành 2 car riêng biệt 
 - Sau sửa đã Save và export lại chưa? Đã save và export lại
 
-Nếu bạn **đã xem Summary tự đánh giá trên GitHub Actions hoặc tự chạy script**, ghi ngắn một kết quả liên quan lỗi vừa sửa (ví dụ task, metric trước/sau nếu có): … / chưa có điểm. Scorecard ba tier tối đa **82**, không phải điểm cuối trên 100. Không tự ghi PASS/top 3/bonus; người phụ trách xác nhận theo tiêu chí lớp. Không đưa file ground truth vào fork.
+Nếu bạn **đã xem Summary tự đánh giá trên GitHub Actions hoặc tự chạy script**, ghi ngắn một kết quả liên quan lỗi vừa sửa (ví dụ task, metric trước/sau nếu có): => Đã xem Summary, ban đầu phát hiện lỗi nộp nhầm file zip -> đã sửa, có warming -> xem lại ảnh sau  / chưa có điểm. 
+
+Scorecard ba tier tối đa **82**, không phải điểm cuối trên 100. Không tự ghi PASS/top 3/bonus; người phụ trách xác nhận theo tiêu chí lớp. Không đưa file ground truth vào fork.
 
 ## 4. Ba ca chưa chắc hoặc đã cân nhắc
 
@@ -54,6 +56,8 @@ Mỗi ca là một **vùng cụ thể** khiến bạn phải cân nhắc hai cá
 
 | Ảnh/vị trí | Hai cách hiểu có thể | Quy tắc/chứng cứ | Quyết định hoặc câu hỏi cho coach |
 | --- | --- | --- | --- |
-| 1 | … | … | … |
-| 2 | … | … | … |
-| 3 | … | … | … |
+| 1 Đoạn mép đường và vỉa hè (Task easy_semantic hoặc cp4_curb) | Cách 1: Nhận diện theo màu sắc mặt đường (chỗ nhựa đen là road, chỗ sáng màu/gạch là sidewalk).
+Cách 2: Nhận diện theo chức năng và gờ bó vỉa (curb) | Ranh road–sidewalk xác định theo chức năng và bó vỉa, không chỉ theo màu nhựa đường | Quyết định: Dựa vào mép đá bó vỉa để kẻ ranh giới. |
+| 2 Xe ô tô bị cột đèn che khuất ở giữa (Task medium_instance hoặc cp5_occlusion) | Cách 1: Tô 2 phần xe sau đó sử dụng phím J để gộp
+Cách 2: chưa biết | Một vật bị che có thể có các vùng nhìn thấy rời nhau nhưng vẫn là một instance | Quyết định: Gán cả 2 phần nhìn thấy vào cùng 1 instance car, không vẽ phần bị cột đèn che khuất |
+| 3 Kính xe  nhìn xuyên thấu nền phía sau (cp1_holes) | Tô phủ toàn bộ kính như một bộ phận hoàn chỉnh của xe  | Chỉ khoét khi là lỗ thực sự xuyên thấu | Quyết định: Giữ nguyên kính nằm trong mask của xe moto, không khoét lỗ để tránh làm nát mask của xe |
