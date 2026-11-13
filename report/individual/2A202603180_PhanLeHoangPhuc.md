@@ -31,20 +31,20 @@ Nếu export lỗi, ghi task, dữ liệu đã Save đến đâu và lỗi đã 
 
 Chọn object đầu tiên bạn tự vẽ ở `medium_instance`, trước khi xem bất kỳ đề xuất tự động nào cho object đó. Ghi ảnh/vị trí đủ để tìm lại; “quy tắc biên” là lý do bạn chọn hoặc dừng mask ở ranh đó.
 
-- Ảnh, vị trí và object Medium đầu tiên tự vẽ: …
-- Class và quy tắc tôi dùng để chọn biên: …
-- Nếu dùng gợi ý sau đó: vùng gợi ý sai/đúng, hành động sửa/giữ và lý do: …
+- Ảnh, vị trí và object Medium đầu tiên tự vẽ: ảnh 1 - 000000181542. Xe máy của người nam lái phía sau người phụ nữ lớn tuổi mặc áo dài
+- Class và quy tắc tôi dùng để chọn biên: Class motocycle. Tôi sử dụng Mask để tô toàn bộ xe, chỉ bao gồm phần có thể quan sát được. Không bao gồm phần nền đường hoặc những khu vực bị vật thể khác che khuất.
+- Nếu dùng gợi ý sau đó: vùng gợi ý sai/đúng, hành động sửa/giữ và lý do: Mình dùng MobileSam nhưng do ảnh không màu nên nhận diện sai, mình chỉnh tay lại cho khớp xe gắn máy. Tô 2 vùng sau đó dùng phím J để gộp lại do xe bị tách đôi bởi người phụ nữ đứng trước
 - Nếu không dùng gợi ý: ghi “không dùng”; vẫn giải thích một quyết định gán nhãn của mình.
 
 ## 3. Một lỗi tôi tìm thấy và sửa
 
 Chọn một lỗi **có thật** trong bài. Nếu công cụ lỗi khiến bạn chưa sửa được, ghi rõ đã thử gì và cần coach hỗ trợ gì; không ghi “đã sửa” khi chưa sửa.
 
-- Task/ảnh/vùng: …
-- Lỗi thuộc loại: sai lớp / thiếu-thừa vật / gộp-tách / biên / phủ vùng / khác: …
-- Bằng chứng tôi nhìn thấy: …
-- Quy tắc và hành động sửa: …
-- Sau sửa đã Save và export lại chưa? …
+- Task/ảnh/vùng: task medium_instance, ảnh 3 - 000000458325, 2 xe bên hàng trái vị trí xa nhất và bên phải người đàn ông đang đẩy xe em bé qua đường
+- Lỗi thuộc loại: sai lớp / thiếu-thừa vật / gộp-tách / biên / phủ vùng / khác: gộp vật thể
+- Bằng chứng tôi nhìn thấy: Nhìn thấy mui xe không phải 1 khối duy nhất, giữa 2 mui xe có vùng lỡm tam giác
+- Quy tắc và hành động sửa: Theo guideline mỗi vật thể 1 mask, tôi đã xóa và tô lại thành 2 car riêng biệt 
+- Sau sửa đã Save và export lại chưa? Đã save và export lại
 
 Nếu bạn **đã xem Summary tự đánh giá trên GitHub Actions hoặc tự chạy script**, ghi ngắn một kết quả liên quan lỗi vừa sửa (ví dụ task, metric trước/sau nếu có): … / chưa có điểm. Scorecard ba tier tối đa **82**, không phải điểm cuối trên 100. Không tự ghi PASS/top 3/bonus; người phụ trách xác nhận theo tiêu chí lớp. Không đưa file ground truth vào fork.
 
